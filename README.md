@@ -1,5 +1,12 @@
 # AMR_Summary
 
+[![CircleCI](https://circleci.com/gh/OLC-Bioinformatics/AMR_Summary/tree/main.svg?style=shield)](https://circleci.com/gh/OLC-Bioinformatics/AMR_Summary/tree/main)
+[![codecov](https://codecov.io/gh/OLC-Bioinformatics/AMR_Summary/branch/main/graph/badge.svg?token=B65SOEV6QE)](https://codecov.io/gh/OLC-Bioinformatics/AMR_Summary)
+[![Anaconda-Server Badge](https://img.shields.io/badge/install%20with-conda-brightgreen)](https://anaconda.org/olcbioinformatics/amr_summary)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/OLC-Bioinformatics/AMR_Summary?label=version)
+[![GitHub issues](https://img.shields.io/github/issues/OLC-Bioinformatics/AMR_Summary)](https://github.com/OLC-Bioinformatics/AMR_Summary/issues)
+[![license](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/OLC-Bioinformatics/AMR_Summary/blob/main/LICENSE)
+
 AMR Summary combines the outputs from [ResFinder](https://cge.cbs.dtu.dk/services/ResFinder/) and [MOB-recon](https://github.com/phac-nml/mob-suite) to yield reports with genes AMR resistance phenotypes, and whether they are present on plasmids.
 
 ## Installation
