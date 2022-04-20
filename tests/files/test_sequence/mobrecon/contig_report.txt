@@ -1,0 +1,5 @@
+sample_id	molecule_type	primary_cluster_id	secondary_cluster_id	contig_id	size	gc	md5	circularity_status	rep_type(s)	rep_type_accession(s)	relaxase_type(s)	relaxase_type_accession(s)	mpf_type	mpf_type_accession(s)	orit_type(s)	orit_accession(s)	predicted_mobility	mash_nearest_neighbor	mash_neighbor_distance	mash_neighbor_identification	repetitive_dna_id	repetitive_dna_type	filtering_reason
+test_sequence	plasmid	AB595	AK439	Contig_4_177.221_Circ	8379	55.483947965150975	f6727d33feab22a7fed3419b764a9380	not tested	rep_cluster_2335	KU302809_00001	-	-	-	-	MOBP	AJ001708	-	CP034068	7.15897e-05	Shigella sonnei	-	-	-
+test_sequence	chromosome	-	-	Contig_21_66.7993	15926	49.29674745698857	0055ae1d5d6a395787bedd9093e76777	not tested	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+test_sequence	chromosome	-	-	Contig_42_122.068	11877	51.23347646712133	de7dfc45194da2c49dcec2963be595ce	not tested	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+test_sequence	chromosome	-	-	Contig_370_138.091	6384	46.30325814536341	916be6f6e0c724589b2cd7df7a3a6dce	not tested	-	-	-	-	-	-	-	-	-	-	-	-	LT898484	ISEhe4	repetitve element
