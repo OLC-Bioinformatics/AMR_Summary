@@ -4,12 +4,13 @@ from distutils.util import convert_path
 import os
 
 # Find the version
+version = dict()
 with open(convert_path(os.path.join('amr_summary', 'version.py')), 'r') as version_file:
-    __version__ = version_file.read()
+    exec(version_file.read(), version)
 
 setup(
     name='AMR_Summary',
-    version=__version__,
+    version=version['__version__'],
     entry_points={
         'console_scripts': [
             'AMR_Summary = amr_summary.amr_summary:cli',
