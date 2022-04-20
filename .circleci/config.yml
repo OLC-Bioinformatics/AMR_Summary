@@ -27,7 +27,6 @@ jobs:
             bash $HOME/miniconda.sh -b -p $HOME/miniconda
             export PATH="$HOME/miniconda/bin:$PATH"
             conda config --set always_yes yes --set changeps1 no
-            conda update -y conda
             conda config --add channels conda-forge
             conda create -n amr_summary -c olcbioinformatics amr_summary=0.0.1
             source activate amr_summary
