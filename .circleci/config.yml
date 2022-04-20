@@ -29,9 +29,8 @@ jobs:
             conda config --set always_yes yes --set changeps1 no
             conda update -y conda
             conda config --add channels conda-forge
-            conda create -n amr_summary python=3.9.12=h9a8a25e_1_cpython
+            conda create -n amr_summary -c olcbioinformatics amr_summary=0.0.1
             source activate amr_summary
-            conda install -c olcbioinformatics amr_summary=0.0.1
             python -m pytest tests/ --cov=amr_summary --cov-config=.coveragec --cov-report=xml:test_reports/amr_summary.xml
       - store_artifacts:
           path: test_reports/
