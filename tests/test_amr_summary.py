@@ -61,7 +61,7 @@ def test_run_mob_recon(variables):
 
 
 @pytest.mark.parametrize('folder_name',
-                         ['~/',
+                         ['~/fake-path',
                           ''])
 def test_amr_summary_class_reports(variables, folder_name):
     AMRSummary(sequence_path=variables.file_path,
@@ -97,3 +97,16 @@ def test_clean_outputs(variables):
 def test_clean_databases(variables):
     shutil.rmtree(variables.database_path)
     assert not os.path.isdir(variables.database_path)
+
+
+def test_remove_path():
+    fake_path = '~/fake-path'
+    shutil.rmtree(fake_path)
+    assert not os.path.isdir(fake_path)
+
+
+def test_remove_tilde_path():
+    fake_path = os.path.join(os.getcwd(), '~')
+    shutil.rmtree(fake_path)
+    assert not os.path.isdir(fake_path)
+
