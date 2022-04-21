@@ -100,11 +100,6 @@ def test_amr_summary_integration(mock_args, variables):
     assert os.path.isfile(os.path.join(report_path, 'resfinder_blastn.xlsx'))
 
 
-def test_clean_outputs(variables):
-    shutil.rmtree(variables.output_path)
-    assert not os.path.isdir(variables.output_path)
-
-
 def test_clean_databases(variables):
     shutil.rmtree(variables.database_path)
     assert not os.path.isdir(variables.database_path)
@@ -120,3 +115,8 @@ def test_remove_tilde_path():
     fake_path = os.path.join(os.getcwd(), '~')
     shutil.rmtree(fake_path)
     assert not os.path.isdir(fake_path)
+
+
+def test_clean_outputs(variables):
+    shutil.rmtree(variables.output_path)
+    assert not os.path.isdir(variables.output_path)
