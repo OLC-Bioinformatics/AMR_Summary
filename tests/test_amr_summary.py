@@ -38,11 +38,22 @@ def test_assert_path_tilde():
             category='test')
 
 
-def test_assert_databases(variables):
+def test_assert_database_variable(variables):
     variables.resfinder_path, variables.mob_recon_path = \
         AMRSummary.assert_databases(database_path=variables.database_path)
     assert variables.resfinder_path == os.path.join(variables.database_path, 'resfinder')
+
+
+def test_assert_database_folder(variables):
     assert os.path.isdir(variables.resfinder_path)
+
+
+def test_assert_database_files(variables):
+    assert os.path.isfile(os.path.join(variables.resfinder_path, 'colistin.tfa'))
+
+
+def test_assert_database_combined_targets(variables):
+    assert os.path.getsize(os.path.join(variables.resfinder_path, 'combinedtargets.fasta')) > 100
 
 
 def test_run_resfinder(variables):
@@ -109,4 +120,3 @@ def test_remove_tilde_path():
     fake_path = os.path.join(os.getcwd(), '~')
     shutil.rmtree(fake_path)
     assert not os.path.isdir(fake_path)
-
