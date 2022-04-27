@@ -25,7 +25,7 @@ conda update -q conda
 
 You can now install the AMR_Summary package:
 
-`conda install -c olc-bioinformatics amr_summary`
+`conda install -c olcbioinformatics amr_summary`
 
 If you encounter the following error:
 
